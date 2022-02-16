@@ -1,0 +1,63 @@
+[{
+        "title" : "Lentejas con chorizo",
+        "image" : "image_1_big",
+        "subtitle" : "Que ricas",
+        "description" : "Se hacen de la siguiente forma",
+        "price" : "25",
+        "calories" : 420,
+        "category"  : 1
+    },
+        {
+        "title" : "Macarrones con tomate",
+        "image" : "image_1_big",
+        "subtitle" : "con salsa de tomate",
+        "description" : "Se hacen de la siguiente forma",
+        "price" : "40",
+        "calories" : 270,
+        "category"  : 2
+        
+    },
+        {
+        "title" : "Macarrones con tomate",
+        "image" : "image_1_big",
+        "subtitle" : "con salsa de tomate",
+        "description" : "Se hacen de la siguiente forma",
+        "price" : "40",
+        "calories" : 270,
+        "category"  : 2
+        
+    },
+     {
+     "title" : "Sushi",
+     "image" : "image_1_big",
+     "subtitle" : "teriyaki",
+     "description" : "comida japonesa",
+     "price" : "17",
+     "calories" : 560,
+     "category"  : 3
+     
+ },{
+     "title" : "Ramen",
+     "image" : "image_1_big",
+     "subtitle" : "con pollo",
+     "description" : "listos para comer",
+     "price" : "17",
+     "calories" : 560,
+     "category"  : 3
+     
+ },
+
+    ]
+
+
+//struct Plate {
+//
+//    let image: String
+//    let title: String
+//    let subtitle: String
+//    let description: String
+//    let price: String
+//    let calories: Double
+//    let category: FoodCategory
+//
+//}

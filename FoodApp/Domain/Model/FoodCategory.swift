@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum FoodCategory: String {
+enum FoodCategory: String, Codable {
     
     case ALL = "All"
     case ITALIAN = "Italian"

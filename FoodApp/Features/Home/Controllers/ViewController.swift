@@ -40,26 +40,12 @@ class ViewController: UIViewController {
             _border.fillColor = nil
             _border.lineWidth = 12.0
             button.layer.addSublayer(_border)
-            
-            //self.view.addSubview(button)
-        }
+                    }
     }
     @IBOutlet var pruebaImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        Alamofire.request("https://cdn.pixabay.com/photo/2021/12/10/13/59/star-6860582_960_720.jpg").responseImage { response in
-//            debugPrint(response)
-//
-//            print(response.request)
-//            print(response.response)
-//            debugPrint(response.result)
-//
-//            if case .success(let image) = response.result {
-//                self.pruebaImage.image = image
-//            }
-//        }
         
         
         loadData()
@@ -69,7 +55,7 @@ class ViewController: UIViewController {
     }
     
     private func loadData() {
-        plates = plateRepository.plateRepo
+        plates = DataManager().readJsonData()
         print(plates)
     }
     
@@ -100,8 +86,11 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         
         if collectionView.tag == 1 {
             categoryCell = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryLabel", for: indexPath) as! CategoryCollectionViewCell
-            
-            categoryCell.textLabel.text = categories[indexPath.row].rawValue
+                        
+            if indexPath.row < categories.count {
+                let category = categories[indexPath.row]
+                categoryCell.updateView(category: category)
+            }
             
             return categoryCell
             
@@ -109,10 +98,10 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
             
             plateCell = collectionView.dequeueReusableCell(withReuseIdentifier: "plateCell", for: indexPath) as! PlateCollectionViewCell
                         
-            plateCell.priceLabel.text = "$\(plates[indexPath.row].price)"
-            plateCell.titleLabel.text = plates[indexPath.row].title
-            plateCell.subtitleLabel.text = plates[indexPath.row].subtitle
-            plateCell.descriptionLabel.text = plates[indexPath.row].description
+            if indexPath.row < dataCount {
+                let plate = plates[indexPath.row]
+                plateCell.updateViews(plate: plate)
+            }
             
             return plateCell
         }
@@ -124,7 +113,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         if indexPath.row < dataCount {
             let plate = plates[indexPath.row]
             
-            performSegue(withIdentifier: "toDetail", sender: plate)
+            performSegue(withIdentifier: segueDetail, sender: plate)
         }
     }
     

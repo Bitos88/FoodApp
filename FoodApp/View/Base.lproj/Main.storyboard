@@ -8,6 +8,11 @@
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pushster-Regular.ttf">
+            <string>Lobster-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -24,14 +29,20 @@
                                     <constraint firstAttribute="width" constant="30" id="xc3-6P-m0L"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simple way to find tasty food  " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ti-fL-EnI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ti-fL-EnI">
                                 <rect key="frame" x="20" y="136" width="275" height="95"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="275" id="3T1-5G-MVX"/>
                                     <constraint firstAttribute="height" constant="95" id="eb4-Gr-URd"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Simple way to find tasty food  ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="36" name="Lobster-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xle-ob-dgJ">
@@ -123,13 +134,13 @@
                                                     </constraints>
                                                 </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="420Kcal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Rd-Np-bVu">
-                                                    <rect key="frame" x="20" y="307" width="190" height="16"/>
+                                                    <rect key="frame" x="20" y="305.5" width="190" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEL-A8-qxc">
-                                                    <rect key="frame" x="20" y="210" width="190" height="47"/>
+                                                    <rect key="frame" x="20" y="208.5" width="190" height="47"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="190" id="rtN-LT-CEY"/>
                                                     </constraints>
@@ -138,16 +149,16 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mho-dt-jEE">
-                                                    <rect key="frame" x="20" y="135" width="190" height="55"/>
+                                                    <rect key="frame" x="20" y="135" width="190" height="53.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vegan salad Bowl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mh9-OG-kJA">
-                                                            <rect key="frame" x="0.0" y="0.0" width="179.5" height="26.5"/>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="141" height="25"/>
+                                                            <fontDescription key="fontDescription" name="Lobster-Regular" family="Lobster" pointSize="20"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="with red tomato" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Viq-9N-hE3">
-                                                            <rect key="frame" x="0.0" y="34.5" width="119.5" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="33" width="119.5" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -206,18 +217,11 @@
                                         <integer key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="eyV-Qx-j3b" kind="show" identifier="toDetail" id="kLN-C4-LCn"/>
-                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pIA-Lq-7Ga">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="pIA-Lq-7Ga" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0EJ-9h-3Wu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OYy-WC-zuO" secondAttribute="trailing" constant="20" id="1n4-4t-V6v"/>
                             <constraint firstItem="xle-ob-dgJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="38O-qU-kuM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ayO-m2-B0r" secondAttribute="bottom" constant="40" id="5GG-HL-ada"/>
@@ -226,7 +230,6 @@
                             <constraint firstItem="xle-ob-dgJ" firstAttribute="top" secondItem="3ti-fL-EnI" secondAttribute="bottom" constant="20" id="LLu-UH-Iij"/>
                             <constraint firstItem="OYy-WC-zuO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="THP-jA-6mM"/>
                             <constraint firstItem="3ti-fL-EnI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TwN-gB-13P"/>
-                            <constraint firstItem="pIA-Lq-7Ga" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="U9z-kw-80G"/>
                             <constraint firstItem="RPx-iZ-jXU" firstAttribute="top" secondItem="NbF-8r-tFs" secondAttribute="bottom" constant="41" id="X2Q-b7-NoZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ayO-m2-B0r" secondAttribute="trailing" constant="20" id="aU0-3t-II0"/>
                             <constraint firstItem="NbF-8r-tFs" firstAttribute="trailing" secondItem="xle-ob-dgJ" secondAttribute="trailing" id="b0a-vC-aHf"/>
@@ -234,15 +237,13 @@
                             <constraint firstItem="NbF-8r-tFs" firstAttribute="top" secondItem="xle-ob-dgJ" secondAttribute="bottom" constant="24" id="nhi-qM-Qfw"/>
                             <constraint firstItem="NbF-8r-tFs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pwR-Tc-2F2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RPx-iZ-jXU" secondAttribute="trailing" constant="50" id="s8K-g5-JPb"/>
-                            <constraint firstItem="pIA-Lq-7Ga" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ubx-K7-yAd"/>
                             <constraint firstItem="NbF-8r-tFs" firstAttribute="leading" secondItem="xle-ob-dgJ" secondAttribute="leading" id="xWi-WP-0wq"/>
-                            <constraint firstAttribute="bottom" secondItem="pIA-Lq-7Ga" secondAttribute="bottom" id="zKx-lU-f8H"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0Xm-mb-gAL"/>
                     <connections>
                         <outlet property="button" destination="ayO-m2-B0r" id="AIE-HP-mJ1"/>
-                        <outlet property="pruebaImage" destination="pIA-Lq-7Ga" id="Vdl-WZ-J0U"/>
+                        <segue destination="eyV-Qx-j3b" kind="show" identifier="toDetail" id="mDc-OK-1SF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -270,14 +271,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2el-3h-0Lr">
                                         <rect key="frame" x="0.0" y="0.0" width="223" height="55"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vegan salad Bowl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYY-ax-YOz">
-                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="26.5"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Vegan salad Bowl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYY-ax-YOz">
+                                                <rect key="frame" x="0.0" y="0.0" width="183.5" height="32.5"/>
+                                                <fontDescription key="fontDescription" name="Lobster-Regular" family="Lobster" pointSize="26"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="With red tomato" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9s-Dc-50Z">
-                                                <rect key="frame" x="0.0" y="34.5" width="123" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="With red tomato" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9s-Dc-50Z">
+                                                <rect key="frame" x="0.0" y="40.5" width="123" height="14.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>

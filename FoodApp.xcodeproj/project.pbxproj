@@ -10,6 +10,12 @@
 		1A9924592773C07D001AB1EE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9924582773C07D001AB1EE /* DetailViewController.swift */; };
 		1A99245B2773C24B001AB1EE /* Plate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99245A2773C24B001AB1EE /* Plate.swift */; };
 		1A99245F2773C3B0001AB1EE /* PlateRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A99245E2773C3B0001AB1EE /* PlateRepository.swift */; };
+		1A9FB4DA2779C6F60044CF3C /* ConstantsSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9FB4D92779C6F60044CF3C /* ConstantsSegues.swift */; };
+		1A9FB4DD2779D0100044CF3C /* Pushster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A9FB4DC2779CF680044CF3C /* Pushster-Regular.ttf */; };
+		1A9FB4DF2779D4120044CF3C /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A9FB4DE2779D3060044CF3C /* Roboto-Medium.ttf */; };
+		1A9FB4E12779D9130044CF3C /* plate_data.json in Sources */ = {isa = PBXBuildFile; fileRef = 1A9FB4E02779D9130044CF3C /* plate_data.json */; };
+		1A9FB4E32779DBC70044CF3C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9FB4E22779DBC70044CF3C /* DataManager.swift */; };
+		1A9FB4E52779E15C0044CF3C /* appfoodjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A9FB4E42779E15B0044CF3C /* appfoodjson.json */; };
 		1AB1BFDE2772647900245985 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB1BFDD2772647900245985 /* AppDelegate.swift */; };
 		1AB1BFE02772647900245985 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB1BFDF2772647900245985 /* SceneDelegate.swift */; };
 		1AB1BFE22772647900245985 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB1BFE12772647900245985 /* ViewController.swift */; };
@@ -26,6 +32,12 @@
 		1A9924582773C07D001AB1EE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		1A99245A2773C24B001AB1EE /* Plate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plate.swift; sourceTree = "<group>"; };
 		1A99245E2773C3B0001AB1EE /* PlateRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateRepository.swift; sourceTree = "<group>"; };
+		1A9FB4D92779C6F60044CF3C /* ConstantsSegues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsSegues.swift; sourceTree = "<group>"; };
+		1A9FB4DC2779CF680044CF3C /* Pushster-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pushster-Regular.ttf"; sourceTree = "<group>"; };
+		1A9FB4DE2779D3060044CF3C /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		1A9FB4E02779D9130044CF3C /* plate_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = plate_data.json; sourceTree = "<group>"; };
+		1A9FB4E22779DBC70044CF3C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		1A9FB4E42779E15B0044CF3C /* appfoodjson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = appfoodjson.json; sourceTree = "<group>"; };
 		1AB1BFDA2772647900245985 /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AB1BFDD2772647900245985 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AB1BFDF2772647900245985 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +71,9 @@
 			children = (
 				1A99245D2773C38F001AB1EE /* Repositories */,
 				1AB1BFF52772683300245985 /* Model */,
+				1A9FB4E02779D9130044CF3C /* plate_data.json */,
+				1A9FB4E22779DBC70044CF3C /* DataManager.swift */,
+				1A9FB4E42779E15B0044CF3C /* appfoodjson.json */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -69,6 +84,92 @@
 				1A99245E2773C3B0001AB1EE /* PlateRepository.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		1A9FB4CF2779C4900044CF3C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1AB1BFDF2772647900245985 /* SceneDelegate.swift */,
+				1AB1BFDD2772647900245985 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1A9FB4D02779C5AA0044CF3C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A9FB4DB2779CF580044CF3C /* Fonts */,
+				1AB1BFE62772647B00245985 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1A9FB4D12779C5BE0044CF3C /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				1A9FB4D32779C5D10044CF3C /* Detail */,
+				1A9FB4D22779C5CB0044CF3C /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		1A9FB4D22779C5CB0044CF3C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1A9FB4D52779C5F10044CF3C /* Controllers */,
+				1A9FB4D42779C5EB0044CF3C /* Cells */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1A9FB4D32779C5D10044CF3C /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				1A9FB4D72779C6180044CF3C /* Controllers */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		1A9FB4D42779C5EB0044CF3C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1AB1BFF627726D8C00245985 /* CategoryCollectionViewCell.swift */,
+				1AB1BFF82772758D00245985 /* PlateCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1A9FB4D52779C5F10044CF3C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1AB1BFE12772647900245985 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1A9FB4D72779C6180044CF3C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1A9924582773C07D001AB1EE /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1A9FB4D82779C6A30044CF3C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				1A9FB4D92779C6F60044CF3C /* ConstantsSegues.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		1A9FB4DB2779CF580044CF3C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1A9FB4DC2779CF680044CF3C /* Pushster-Regular.ttf */,
+				1A9FB4DE2779D3060044CF3C /* Roboto-Medium.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		1AB1BFD12772647900245985 = {
@@ -92,13 +193,13 @@
 		1AB1BFDC2772647900245985 /* FoodApp */ = {
 			isa = PBXGroup;
 			children = (
-				1A99245C2773C37F001AB1EE /* Domain */,
-				1AB1BFF42772680000245985 /* Controller */,
-				1AB1BFF3277267F900245985 /* View */,
-				1AB1BFDD2772647900245985 /* AppDelegate.swift */,
-				1AB1BFDF2772647900245985 /* SceneDelegate.swift */,
-				1AB1BFE62772647B00245985 /* Assets.xcassets */,
 				1AB1BFEB2772647B00245985 /* Info.plist */,
+				1A9FB4D82779C6A30044CF3C /* Constants */,
+				1A9FB4D12779C5BE0044CF3C /* Features */,
+				1A9FB4D02779C5AA0044CF3C /* Resources */,
+				1A9FB4CF2779C4900044CF3C /* App */,
+				1A99245C2773C37F001AB1EE /* Domain */,
+				1AB1BFF3277267F900245985 /* View */,
 			);
 			path = FoodApp;
 			sourceTree = "<group>";
@@ -106,21 +207,10 @@
 		1AB1BFF3277267F900245985 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1AB1BFF627726D8C00245985 /* CategoryCollectionViewCell.swift */,
-				1AB1BFF82772758D00245985 /* PlateCollectionViewCell.swift */,
 				1AB1BFE32772647900245985 /* Main.storyboard */,
 				1AB1BFE82772647B00245985 /* LaunchScreen.storyboard */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		1AB1BFF42772680000245985 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				1AB1BFE12772647900245985 /* ViewController.swift */,
-				1A9924582773C07D001AB1EE /* DetailViewController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		1AB1BFF52772683300245985 /* Model */ = {
@@ -146,7 +236,6 @@
 				68E50C0B63AFB46109A35B4A /* Pods-FoodApp.debug.xcconfig */,
 				F65D51200A6D1530589EE24B /* Pods-FoodApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -210,9 +299,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A9FB4DF2779D4120044CF3C /* Roboto-Medium.ttf in Resources */,
 				1AB1BFEA2772647B00245985 /* LaunchScreen.storyboard in Resources */,
+				1A9FB4DD2779D0100044CF3C /* Pushster-Regular.ttf in Resources */,
 				1AB1BFE72772647B00245985 /* Assets.xcassets in Resources */,
 				1AB1BFE52772647900245985 /* Main.storyboard in Resources */,
+				1A9FB4E52779E15C0044CF3C /* appfoodjson.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,13 +358,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AB1BFE22772647900245985 /* ViewController.swift in Sources */,
+				1A9FB4E32779DBC70044CF3C /* DataManager.swift in Sources */,
 				1AB1BFF92772758D00245985 /* PlateCollectionViewCell.swift in Sources */,
 				1AB1BFF727726D8C00245985 /* CategoryCollectionViewCell.swift in Sources */,
 				1AB1BFDE2772647900245985 /* AppDelegate.swift in Sources */,
 				1A99245F2773C3B0001AB1EE /* PlateRepository.swift in Sources */,
+				1A9FB4DA2779C6F60044CF3C /* ConstantsSegues.swift in Sources */,
 				1A99245B2773C24B001AB1EE /* Plate.swift in Sources */,
 				1AB1BFE02772647900245985 /* SceneDelegate.swift in Sources */,
 				1AB1BFF2277266FC00245985 /* FoodCategory.swift in Sources */,
+				1A9FB4E12779D9130044CF3C /* plate_data.json in Sources */,
 				1A9924592773C07D001AB1EE /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
